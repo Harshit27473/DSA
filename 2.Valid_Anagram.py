@@ -1,5 +1,7 @@
 class Solution(object):
     def isAnagram(self, s, t):
+        
+        # soluton 1
         if len(s)!= len(t):
             return False
         countS, countT = {}, {}
@@ -12,3 +14,9 @@ class Solution(object):
                 return False
 
         return True
+    
+        # solution 2
+        # return Counter(s) == Counter(t)
+
+        # solution 3
+        # return sorted(s) == sorted(t) 
