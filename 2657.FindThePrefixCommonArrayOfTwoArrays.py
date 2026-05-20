@@ -7,7 +7,6 @@ class Solution(object):
         for i in range(len(A)):
             a.add(A[i])
             b.add(B[i])
-
             if A[i] in b:
                 count += 1
             if B[i] in a and A[i]!=B[i]:
